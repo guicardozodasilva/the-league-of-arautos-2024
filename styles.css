@@ -1,0 +1,337 @@
+/* Fundo com tema de Dota 2 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #f4f4f4;
+    position: relative;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/fundo-dota2.jpg'); /* Use uma imagem de fundo de Dota 2 */
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.3; /* Transparência para não atrapalhar o conteúdo */
+}
+
+/* Estilos para o Menu de Navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    z-index: 1000; /* Fica acima de outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: top 0.3s; /* Animação suave para ocultar o menu */
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    color: #e63946;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #d62839;
+}
+
+.navbar-toggle {
+    display: block; /* Mostra o botão de hambúrguer em telas menores */
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px; /* Espaço para não ficar colado na borda */
+    position: absolute; /* Posicionamento absoluto dentro do navbar */
+    right: 40px; /* Define a distância da direita */
+    top: 5px; /* Alinha verticalmente dentro do navbar */
+    z-index: 1001; /* Garante que o ícone esteja acima de outros elementos */
+}
+
+header {
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: #e63946;
+    margin-top: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e63946;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d62839;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.1em;
+}
+
+.rules {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rules ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rules li {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.1em;
+}
+
+.toggle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #d62839;
+}
+
+.hidden-rules {
+    display: none; /* Inicialmente escondido */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 90%; /* Ajuste de largura para centralização */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel {
+    /*display: flex;
+    justify-content: center; /* Centraliza os itens dentro do carrossel */
+    /*transition: transform 0.5s ease;*/
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    width: 100%;
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Cor do thumb e do track para Firefox */
+}
+
+/* Track da scrollbar (fundo da barra de rolagem) */
+.carousel::-webkit-scrollbar {
+    height: 8px; /* Altura da scrollbar horizontal */
+}
+
+/* Thumb da scrollbar (a parte que se move) */
+.carousel::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do thumb */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Thumb da scrollbar ao passar o mouse */
+.carousel::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do thumb quando o mouse passa por cima */
+}
+
+/* Track da scrollbar (fundo da barra de rolagem) */
+.carousel::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor do track */
+}
+
+/* Estilo dos Cards */
+.team-card {
+    width: 200px; /* Define a largura fixa */
+    height: 320px; /* Define a altura fixa */
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    flex-shrink: 0;
+    display: inline-block;
+    margin-right: 10px; /* Espaço entre os cards */
+    border: 2px solid #e63946; /* Borda inicial */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    overflow: hidden; /* Oculta o conteúdo que sai do card */
+    animation: borderGlow 2s infinite; /* Aplica a animação de borda */
+}
+
+.team-card h3 {
+    font-size: 1em; /* Ajuste o tamanho da fonte conforme necessário */
+    overflow: hidden; /* Oculta o texto que ultrapassa o card */
+    text-overflow: ellipsis; /* Adiciona reticências no texto que não cabe */
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.team-card p {
+    font-size: 0.9em;
+    white-space: normal; /* Permite quebra de linha automática */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-break: break-word; /* Quebra palavras longas */
+    margin-bottom: 10px; /* Adiciona 10px de espaçamento abaixo do parágrafo */
+}
+
+
+.team-logo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1; /* Garante que os botões fiquem acima do conteúdo */
+}
+
+.prev-btn {
+    left: 200px; /* Ajuste da posição para alinhamento com o carrossel */
+}
+
+.next-btn {
+    right: 200px; /* Ajuste da posição para alinhamento com o carrossel */
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #e63946, 0 0 20px #e63946, 0 0 30px #e63946;
+    }
+    to {
+        text-shadow: 0 0 20px #ff6f61, 0 0 30px #ff6f61, 0 0 40px #ff6f61;
+    }
+}
+
+@keyframes borderGlow {
+    0% {
+        border-color: #e63946; /* Cor inicial */
+        box-shadow: 0 0 3px #e63946;
+    }
+    50% {
+        border-color: #ff6f61; /* Cor intermediária */
+        box-shadow: 0 0 15px #ff6f61;
+    }
+    100% {
+        border-color: #e63946; /* Volta para a cor inicial */
+        box-shadow: 0 0 3px #e63946;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Oculta o menu inicialmente */
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px; /* Ajusta abaixo do header */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000; /* Fica acima de outros elementos */
+    }
+
+    .navbar-menu a {
+        padding: 15px 0;
+        border-bottom: 1px solid #444;
+    }
+
+    .navbar-toggle {
+        display: block; /* Mostra o botão de hambúrguer */
+    }
+}
+
+
