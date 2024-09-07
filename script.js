@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Davi Moreira Fuzatto', role: 'Idealizador e fundador da liga, programador e jogador de dota desde 2017!', photo: 'assets/staff-davi.jpg' },
         { name: 'Antares', role: 'Streamer e comentarista de dota 2, pai da copa dos divinos que hoje ajuda muito na liga como Manager', photo: 'assets/staff-antares.jpg' },
         { name: 'Metallica (nan)', role: 'Sou o Metallica, galera também me chama de “nan”. Tenho 32 anos, Pai da Laura e sou streamer e narrador de dota 2!', photo: 'assets/staff-metallica.jpg' },
+        { name: 'L7', role: 'Me chamo Luíz Fernando vulgo L7 ceo da liga Decan e staff da tla e streamer nas horas vagas', photo: 'assets/staff-l7.jpg' },
         { name: 'kALEO', role: 'Dev catarinense responsável pelo desenvolvimento desse site', photo: 'assets/staff-kALEO.jpg' }
         // Adicione mais membros da staff aqui
     ];
