@@ -458,7 +458,7 @@ ul li {
 /* Estilo dos Cards da Staff */
 .staff-card {
     width: 200px; /* Define a largura fixa */
-    height: 320px; /* Define a altura fixa */
+    height: 340px; /* Define a altura fixa */
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0 10px;
     border-radius: 10px;
