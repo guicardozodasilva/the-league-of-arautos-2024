@@ -117,5 +117,5 @@ document.addEventListener('DOMContentLoaded', () => {
             hiddenRules.style.display = 'none';
             toggleButton.textContent = 'Ver Mais Regras';
         }
-    });
+    });    
 });

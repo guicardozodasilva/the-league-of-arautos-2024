@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhar Liga - The League of Arautos 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fundo com tema Dota 2 -->
+    <div class="background-image"></div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="#" class="navbar-logo"><span>TLA </span>2024</a>
+            
+            <!-- Menu Items -->
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="index.html#home" class="navbar-link">Início</a></li>
+                <li class="navbar-item"><a href="index.html#regras" class="navbar-link">Regras</a></li>
+                <li class="navbar-item"><a href="index.html#inscricao" class="navbar-link">Inscrição</a></li>
+                <li class="navbar-item"><a href="index.html#equipes" class="navbar-link">Equipes</a></li>
+                <li class="navbar-item"><a href="index.html#staff" class="navbar-link">Staff</a></li>
+                <li class="navbar-item"><a href="index.html#contato" class="navbar-link">Contato</a></li>
+            </ul>
+            
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="liga-tabela">
+        <!-- Botão Voltar -->
+        <a href="index.html" class="back-button">
+            ◀ Voltar
+        </a>
+        <h2>Tabela da Liga</h2>
+        <table class="tabela-liga">
+            <thead>
+                <tr>
+                    <th>TIME</th>
+                    <th>PJ</th>
+                    <th>VIT</th>
+                    <th>DER</th>
+                </tr>
+            </thead>
+            <tbody id="liga-tabela-body">
+                <!-- Linhas da tabela serão inseridas dinamicamente via JavaScript -->
+            </tbody>
+        </table>
+    </section>    
+
+    <footer>
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#home"><span>THE LEAGUE OF ARAUTOS 2024</span></a>
+                <p>©2024 THE LEAGUE OF ARAUTOS 2024.</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+            <!--
+            <div class="social grid">
+                <a href="https://www.instagram.com/bitcoinseasons_nft/" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-instagram"></i>
+                </a>
+                <a href="https://twitter.com/btcseasons_nft" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-twitter"></i>
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-discord"></i>
+                </a>
+            </div>
+            -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="liga.js"></script>
+</body>
+</html>

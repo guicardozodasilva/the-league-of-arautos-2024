@@ -172,6 +172,8 @@ nav ul li a.active::after {
     }
 }
 
+/*==== HOME =======================*/
+
 #home {
     text-align: center;
     padding: 80px 0;
@@ -589,4 +591,72 @@ footer .social .icon-discord::before {
         border-color: #e63946; /* Volta para a cor inicial */
         box-shadow: 0 0 3px #e63946;
     }
+}
+
+/*  ACOMPANHAR LIGA */
+#liga-tabela {
+    max-width: 800px;
+    width: 90%; /* Ajusta a tabela para ocupar 100% da largura disponível */
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.tabela-liga {
+    max-width: 800px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    width: 100%; /* Ajusta a tabela para ocupar 100% da largura disponível */
+    table-layout: fixed; /* Garante que as colunas mantenham a largura definida */
+}
+
+.tabela-liga th, .tabela-liga td {
+    border: 1px solid #e63946;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; /* Evita overflow de conteúdo */
+}
+
+.tabela-liga th {
+    background-color: #e63946;
+    color: white;
+}
+
+.tabela-liga td img {
+    width: 60px; /* Ajuste conforme necessário */
+    height: 60px;
+}
+
+.tabela-liga tr:nth-child(even) {
+    background-color: #333; /* Cinza escuro */
+}
+
+/* Estilo para o botão Voltar */
+.back-button {
+    position: relative;
+    top: 80px;
+    left: -350px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #d62839; /* Cor vermelha mais escura ao passar o mouse */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* Estilo para o botão Voltar */
+    .back-button {
+        position: relative;
+        left: -138px;
+        top: 0;
+    }
+
 }
