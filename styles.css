@@ -1,11 +1,20 @@
-/* Fundo com tema de Dota 2 */
+/* Reset básico e estilos globais */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #f4f4f4;
-    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Ajuste conforme o tema */
+    color: #ffffff; /* Ajuste conforme o tema */
+}
+
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 0.625rem;
 }
 
 .background-image {
@@ -21,72 +30,156 @@ body {
     opacity: 0.3; /* Transparência para não atrapalhar o conteúdo */
 }
 
-/* Estilos para o Menu de Navegação */
-.navbar {
-    position: fixed;
-    top: 0;
+/* styles.css */
+
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    justify-content: space-between;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px;
-    z-index: 1000; /* Fica acima de outros elementos */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: top 0.3s; /* Animação suave para ocultar o menu */
+}
+
+nav ul li {
+    text-align: center;
+}
+  
+nav ul li a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #e63946;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #e63946;
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-container {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 10px 20px;
+    height: auto;
 }
 
 .navbar-logo {
-    color: #e63946;
+    color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
+.navbar-logo span {
+    color: #e63946;
+    animation: glow 2s infinite alternate;
+}
+
+/* Menu Items */
 .navbar-menu {
     display: flex;
-    gap: 20px;
 }
 
-.navbar-menu a {
-    color: #fff;
+.navbar-item .navbar-link {
+    color: white;
     text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s;
+    padding: 6px 12px;
+    transition: background-color 0.3s;
 }
 
-.navbar-menu a:hover {
-    color: #d62839;
+.navbar-item .navbar-link:hover {
+    /*background-color: #e63946;
+    border-radius: 4px;*/
+    color: #e63946;
 }
 
+/* Mobile Menu Button */
 .navbar-toggle {
-    display: none; /* Oculta o botão de menu em telas maiores */
-    font-size: 1.5em;
-    color: #fff;
+    display: none; /* Hidden by default */
+    flex-direction: column;
     cursor: pointer;
-    margin-right: 20px; /* Espaço para não ficar colado na borda */
-    position: absolute; /* Posicionamento absoluto dentro do navbar */
-    right: 40px; /* Define a distância da direita */
-    top: 5px; /* Alinha verticalmente dentro do navbar */
-    z-index: 1001; /* Garante que o ícone esteja acima de outros elementos */
+    gap: 4px;
 }
 
-header {
+.navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide menu items by default */
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show menu items when active */
+    }
+
+    .navbar-item {
+        margin: 10px 0; /* Spacing between items */
+    }
+
+    .navbar-toggle {
+        display: flex; /* Show toggle button */
+    }
+}
+
+#home {
     text-align: center;
     padding: 80px 0;
     position: relative;
     z-index: 1;
 }
 
-header img {
+#home img {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
@@ -94,12 +187,27 @@ header img {
     border-radius: 10px;
 }
 
-header h1 {
+#home h1 {
     font-size: 3.5em;
     color: #e63946;
     margin-top: 20px;
     animation: glow 2s infinite alternate;
 }
+
+/*==== LOGO =======================*/
+.logo {
+    font: 700 1.31rem 'Poppins', sans-serif;
+    color: #e63946;
+  }
+  
+  .logo span {
+    color: #e63946;
+  }
+  
+  .logo-alt span {
+    color: hsl(0, 0%, 10%); /* Preto */
+}
+
 
 .btn {
     display: inline-block;
@@ -116,9 +224,26 @@ header h1 {
     background-color: #d62839;
 }
 
+.toggle-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e63946;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #d62839;
+}
+
 section {
     padding: 40px 20px;
     text-align: center;
+    padding-top: 80px; /* Adiciona espaço para evitar sobreposição */
+    margin-top: -80px; /* Compensa o scroll para que o início da seção seja visível */
 }
 
 h2 {
@@ -142,46 +267,72 @@ ul li {
     font-size: 1.1em;
 }
 
-.rules {
+/*============ REGRAS E INFOS ==========*/
+.regras-container {
     max-width: 800px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
+    color: #ffffff; /* Texto branco */
 }
 
-.rules ul {
-    list-style: none;
-    padding: 0;
+.regras-container h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #e63946; /* Cor do título em vermelho */
+    font-size: 2em; /* Ajuste do tamanho da fonte */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave para o texto */
 }
 
-.rules li {
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 10px 0;
+.categoria {
+    border: 1px solid #444; /* Borda cinza escura */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto translúcido */
+}
+
+.categoria-titulo {
+    width: 100%;
+    background: #e63946; /* Cor de fundo vermelha */
+    color: #ffffff; /* Texto branco */
     padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    font-size: 1.1em;
-}
-
-.toggle-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #e63946;
-    color: #fff;
+    text-align: left;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Animação suave */
 }
 
-.toggle-button:hover {
-    background-color: #d62839;
+.categoria-titulo:hover {
+    background: #d62839; /* Altera a cor ao passar o mouse */
 }
 
-.hidden-rules {
-    display: none; /* Inicialmente escondido */
+.categoria-detalhes {
+    display: none;
+    padding: 15px;
+    background-color: rgba(18, 18, 18, 0.9); /* Fundo escuro para o conteúdo */
+    color: #fff; /* Texto branco */
+    border-top: 1px solid #e63946; /* Borda superior vermelha */
 }
+
+.icon {
+    font-size: 18px;
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+.icon.rotate {
+    transform: rotate(180deg); /* Animação de rotação para indicar expansão */
+}
+
+
+/*============ carousel ==========*/
 
 .carousel-container {
     position: relative;
@@ -193,9 +344,6 @@ ul li {
 }
 
 .carousel {
-    /*display: flex;
-    justify-content: center; /* Centraliza os itens dentro do carrossel */
-    /*transition: transform 0.5s ease;*/
     overflow-x: auto;
     white-space: nowrap;
     scroll-behavior: smooth;
@@ -266,26 +414,158 @@ ul li {
     border-radius: 8px;
 }
 
-.prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
+/* Container do Carrossel da Staff */
+.staff-carousel-container {
+    position: relative;
+    max-width: 90%; /* Ajuste de largura para centralização */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Carrossel da Staff */
+.staff-carousel {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    width: 100%;
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Cor do thumb e do track para Firefox */
+}
+
+/* Track da scrollbar (fundo da barra de rolagem) */
+.staff-carousel::-webkit-scrollbar {
+    height: 8px; /* Altura da scrollbar horizontal */
+}
+
+/* Thumb da scrollbar (a parte que se move) */
+.staff-carousel::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do thumb */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Thumb da scrollbar ao passar o mouse */
+.staff-carousel::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do thumb quando o mouse passa por cima */
+}
+
+/* Track da scrollbar (fundo da barra de rolagem) */
+.staff-carousel::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor do track */
+}
+
+/* Estilo dos Cards da Staff */
+.staff-card {
+    width: 200px; /* Define a largura fixa */
+    height: 320px; /* Define a altura fixa */
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    flex-shrink: 0;
+    display: inline-block;
+    margin-right: 10px; /* Espaço entre os cards */
+    border: 2px solid #e63946; /* Borda inicial */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    overflow: hidden; /* Oculta o conteúdo que sai do card */
+    animation: borderGlow 2s infinite; /* Aplica a animação de borda */
+}
+
+.staff-card h3 {
+    font-size: 1em; /* Ajuste o tamanho da fonte conforme necessário */
+    overflow: hidden; /* Oculta o texto que ultrapassa o card */
+    text-overflow: ellipsis; /* Adiciona reticências no texto que não cabe */
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+.staff-card p {
+    font-size: 0.9em;
+    white-space: normal; /* Permite quebra de linha automática */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-break: break-word; /* Quebra palavras longas */
+    margin-bottom: 10px; /* Adiciona 10px de espaçamento abaixo do parágrafo */
+}
+
+.staff-photo {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    font-size: 1.5em;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1; /* Garante que os botões fiquem acima do conteúdo */
+    padding: 20px 0;
+    text-align: center;
 }
 
-.prev-btn {
-    left: 200px; /* Ajuste da posição para alinhamento com o carrossel */
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.next-btn {
-    right: 200px; /* Ajuste da posição para alinhamento com o carrossel */
+footer .brand {
+    margin-bottom: 20px;
 }
+
+footer .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer .logo span {
+    color: #e63946; /* Cor de destaque para 'seasons' */
+}
+
+footer .brand p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer .social {
+    display: flex;
+    gap: 15px;
+}
+
+footer .social a {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #e63946; /* Cor de destaque para o hover */
+}
+
+footer .social .icon-instagram::before {
+    content: "\f16d"; /* Substitua com o ícone correto */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+footer .social .icon-twitter::before {
+    content: "\f099"; /* Substitua com o ícone correto */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+footer .social .icon-discord::before {
+    content: "\f392"; /* Substitua com o ícone correto */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+  
 
 @keyframes glow {
     from {
@@ -310,28 +590,3 @@ ul li {
         box-shadow: 0 0 3px #e63946;
     }
 }
-
-@media (max-width: 768px) {
-    .navbar-menu {
-        display: none; /* Oculta o menu inicialmente */
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px; /* Ajusta abaixo do header */
-        left: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 1000; /* Fica acima de outros elementos */
-    }
-
-    .navbar-menu a {
-        padding: 15px 0;
-        border-bottom: 1px solid #444;
-    }
-
-    .navbar-toggle {
-        display: block; /* Mostra o botão de hambúrguer */
-    }
-}
-
-
