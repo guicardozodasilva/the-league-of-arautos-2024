@@ -335,7 +335,6 @@ ul li {
 
 
 /*============ carousel ==========*/
-
 .carousel-container {
     position: relative;
     max-width: 90%; /* Ajuste de largura para centralização */
@@ -417,6 +416,10 @@ ul li {
 }
 
 /* Container do Carrossel da Staff */
+#staff {
+    margin-top: 1px;
+}
+
 .staff-carousel-container {
     position: relative;
     max-width: 90%; /* Ajuste de largura para centralização */
@@ -594,6 +597,19 @@ footer .social .icon-discord::before {
 }
 
 /*  ACOMPANHAR LIGA */
+/* Container para alinhar o botão e a tabela */
+.container-liga-tabela {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    margin-top: 60px;
+}
+
+.container-liga-tabela h2 {
+    width: 100%; /* Garante que o h2 ocupe 100% da largura */
+    text-align: center; /* Centraliza o texto do h2 */
+}
+
 #liga-tabela {
     max-width: 800px;
     width: 90%; /* Ajusta a tabela para ocupar 100% da largura disponível */
@@ -632,9 +648,7 @@ footer .social .icon-discord::before {
 
 /* Estilo para o botão Voltar */
 .back-button {
-    position: relative;
-    top: 80px;
-    left: -350px;
+    margin-bottom: 10px; /* Margem inferior para separar o botão da tabela */
     background-color: #e63946;
     color: #fff;
     border: none;
@@ -650,13 +664,8 @@ footer .social .icon-discord::before {
     background-color: #d62839; /* Cor vermelha mais escura ao passar o mouse */
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    /* Estilo para o botão Voltar */
-    .back-button {
-        position: relative;
-        left: -110px;
-        top: 0;
+    .container-liga-tabela {
+        margin-top: 0px;
     }
-
 }

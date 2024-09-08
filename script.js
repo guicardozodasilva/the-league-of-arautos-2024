@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Antares Underdogs', logo: 'assets/logo-antares.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
         { name: 'NNCC', logo: 'assets/logo-nncc.jpg', players: ['Jaguá', 'Tears', 'Seu Cledson', 'Mosca', 'Anderson', 'kALEO'] },
         { name: 'CRE', logo: 'assets/logo-cre.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
-        { name: 'É os Punhas', logo: 'assets/logo-punhas.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] }
+        { name: 'É os Punhas', logo: 'assets/logo-punhas.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
+        { name: 'Odin', logo: 'assets/logo-odin.jpg', players: ['Ignel@Neoxa', 'Bigode', 'PoKaS', 'sinteil', 'L7deAngra', 'Kael'] }
         // Adicione mais equipes aqui
     ];
 

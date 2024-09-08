@@ -2,10 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const teamsData = [
-        { logo: 'assets/logo-antares.jpg', played: 5, wins: 3, losses: 2 },
-        { logo: 'assets/logo-nncc.jpg', played: 6, wins: 4, losses: 2 },
-        { logo: 'assets/logo-cre.jpg', played: 4, wins: 2, losses: 2 },
-        { logo: 'assets/logo-punhas.jpg', played: 7, wins: 5, losses: 2 }
+        { logo: 'assets/logo-antares.jpg', played: 0, wins: 0, losses: 0 },
+        { logo: 'assets/logo-nncc.jpg', played: 0, wins: 0, losses: 0 },
+        { logo: 'assets/logo-cre.jpg', played: 0, wins: 0, losses: 0 },
+        { logo: 'assets/logo-punhas.jpg', played: 0, wins: 0, losses: 0 },
+        { logo: 'assets/logo-odin.jpg', played: 0, wins: 0, losses: 0 }
         // Adicione mais equipes aqui
     ];
 
