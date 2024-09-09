@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Código para inicialização dos carrosséis e outras funcionalidades
     const teams = [
         { name: 'Antares Underdogs', logo: 'assets/logo-antares.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
-        { name: 'NNCC', logo: 'assets/logo-nncc.jpg', players: ['Jaguá', 'Tears', 'Seu Cledson', 'Mosca', 'Anderson', 'kALEO'] },
+        { name: 'NNC', logo: 'assets/logo-nnc.jpg', players: ['Jaguá', 'Tears', 'Seu Cledson', 'Mosca', 'Anderson', 'kALEO'] },
         { name: 'CRE', logo: 'assets/logo-cre.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
         { name: 'É os Punhas', logo: 'assets/logo-punhas.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
         { name: 'Odin', logo: 'assets/logo-odin.jpg', players: ['Ignel@Neoxa', 'Bigode', 'PoKaS', 'sinteil', 'L7deAngra', 'Kael'] }
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         teamElement.innerHTML = `
             <img src="${team.logo}" alt="Logo da ${team.name}" class="team-logo">
             <h3>${team.name}</h3>
-            <p>Jogadores: ${team.players.join(', ')}</p>
+            <p>${team.players.join(', ')}</p>
         `;
         carousel.appendChild(teamElement);
     });

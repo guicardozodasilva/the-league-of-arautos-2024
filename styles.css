@@ -610,6 +610,12 @@ footer .social .icon-discord::before {
     text-align: center; /* Centraliza o texto do h2 */
 }
 
+.team-name {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px; /* Diminuindo o tamanho da fonte */
+}
+
 #liga-tabela {
     max-width: 800px;
     width: 90%; /* Ajusta a tabela para ocupar 100% da largura disponível */
