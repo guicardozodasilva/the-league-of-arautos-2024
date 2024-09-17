@@ -25,11 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Código para inicialização dos carrosséis e outras funcionalidades
     const teams = [
-        { name: 'Antares Underdogs', logo: 'assets/logo-antares.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
-        { name: 'NNC', logo: 'assets/logo-nnc.jpg', players: ['Jaguá', 'Tears', 'Seu Cledson', 'Mosca', 'Anderson', 'kALEO'] },
-        { name: 'CRE', logo: 'assets/logo-cre.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
-        { name: 'É os Punhas', logo: 'assets/logo-punhas.jpg', players: ['Jogador 4', 'Jogador 5', 'Jogador 6'] },
-        { name: 'Odin', logo: 'assets/logo-odin.jpg', players: ['Ignel@Neoxa', 'Bigode', 'PoKaS', 'sinteil', 'L7deAngra', 'Kael'] }
+        { name: 'Antares Underdogs', logo: 'assets/logo-antares.jpg', players: ['Antares', '<br>Pacheco', '<br>Feioso', '<br>Sant', '<br>Braia', '<br>CGaura', '<br>Xuulinha'] },
+        { name: 'Baby HD', logo: 'assets/logo-hd.jpg', players: ['m e t a l l i c a ', '<br>clovis', '<br>RENAN POSSUIDÃO', '<br>Bonsai da Montanha', '<br>blackbox', '<br>ARKYN 雨~', '<br>WwN-', '<br>COACH: Joninhas'] },
+        { name: 'Caveiras Enfeitiçadas', logo: 'assets/logo-cre.jpg', players: ['CaveiraRosa', '<br>Vidal', '<br>Metabee', '<br>Kenux', '<br>Calunga', '<br>Rato'] },
+        { name: 'FoxHound Junior', logo: 'assets/logo-fhj.jpg', players: ['Bagdendi', '<br>FAKE NATTY', '<br>Nego_Fenix', '<br>AlTeRad0x1', '<br>Vampagaio', '<br>PlayerDu'] },
+        { name: 'IrmãsDePau.Gaming', logo: 'assets/logo-irmas.jpg', players: ['PAREDÃO_KRN', '<br>JHOON', '<br>DINNAH', '<br>GONKAY', '<br>CHASEIRA', '<br>KEEPDRUNKA', '<br>DANGER', '<br>DINO.KILLER', '<br>COACH: RUFO'] },
+        { name: 'NNC', logo: 'assets/logo-nnc.jpg', players: ['Jaguá', '<br>Tears', '<br>Seu Cledson', '<br>Mosca', '<br>#blackbison', '<br>kALEO', '<br>Lambaio Véio', '<br>COACH: Hermione'] },
+        { name: 'É os Punhas', logo: 'assets/logo-punhas.jpg', players: [''] },
+        { name: 'Odin', logo: 'assets/logo-odin.jpg', players: ['Ignel@Neoxa', '<br>Bigode', '<br>PoKaS', '<br>sinteil', '<br>L7deAngra', '<br>Kael'] }
         // Adicione mais equipes aqui
     ];
 
@@ -52,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Antares', role: 'Streamer e comentarista de dota 2, pai da copa dos divinos que hoje ajuda muito na liga como Manager', photo: 'assets/staff-antares.jpg' },
         { name: 'Metallica (nan)', role: 'Sou o Metallica, galera também me chama de “nan”. Tenho 32 anos, Pai da Laura e sou streamer e narrador de dota 2!', photo: 'assets/staff-metallica.jpg' },
         { name: 'L7', role: 'Me chamo Luíz Fernando vulgo L7 ceo da liga Decan e staff da tla e streamer nas horas vagas', photo: 'assets/staff-l7.jpg' },
+        { name: 'Gabriel Aragão Souza (Lagaum)', role: 'Co-fundador do TLA, iniciado no mundo do Dota por volta de 2006, doteiro antes mesmo de ser gente. Comentarista do primeiro TLA. Streamer e youtuber de ambos Dota e Deadlock.', photo: 'assets/staff-lagaum.jpg' },
         { name: 'kALEO', role: 'Dev catarinense responsável pelo desenvolvimento desse site', photo: 'assets/staff-kALEO.jpg' }
         // Adicione mais membros da staff aqui
     ];

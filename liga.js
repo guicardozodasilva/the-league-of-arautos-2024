@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const teamsData = [
         { name: 'Antares Underdogs', logo: 'assets/logo-antares.jpg', played: 0, wins: 0, losses: 0 },
-        { name: 'Nem Noé Carrega', logo: 'assets/logo-nnc.jpg', played: 0, wins: 0, losses: 0 },
+        { name: 'Baby HD', logo: 'assets/logo-hd.jpg', played: 0, wins: 0, losses: 0 },
         { name: 'Caveiras Enfeitiçadas', logo: 'assets/logo-cre.jpg', played: 0, wins: 0, losses: 0 },
+        { name: 'FoxHound Junior', logo: 'assets/logo-fhj.jpg', played: 0, wins: 0, losses: 0 },
+        { name: 'IrmãsDePau.Gaming', logo: 'assets/logo-irmas.jpg', played: 0, wins: 0, losses: 0 },
+        { name: 'Nem Noé Carrega', logo: 'assets/logo-nnc.jpg', played: 0, wins: 0, losses: 0 },
         { name: 'Punhas', logo: 'assets/logo-punhas.jpg', played: 0, wins: 0, losses: 0 },
         { name: 'Odin Young', logo: 'assets/logo-odin.jpg', played: 0, wins: 0, losses: 0 }
         // Adicione mais equipes aqui
