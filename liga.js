@@ -107,8 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Populando as tabelas dos grupos A e B
     populateTable(groupA, 'groupA');
     populateTable(groupB, 'groupB');
-
-
  
     /* Código antigos
     const teamsData = [
