@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         { 
             rank: 2, team: "Caveiras Enfeitiçadas", matches: "1-1", logo: "assets/logo-cre.jpg",
-            round1: { result: "win", opponentLogo: "assets/logo-punhas.jpg" }, 
+            round1: { result: "win", opponentLogo: "assets/logo-chapados.jpg" }, 
             round2: { result: "loss", opponentLogo: "assets/logo-irmas.jpg" }, 
             round3: { result: "n", opponentLogo: "" }, 
             round4: { result: "n", opponentLogo: "" }, 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             round5: { result: "n", opponentLogo: "" }
         },
         { 
-            rank: 4, team: "É OS PUNHAS", matches: "0-1", logo: "assets/logo-punhas.jpg",
+            rank: 4, team: "Chapados", matches: "0-1", logo: "assets/logo-chapados.jpg",
             round1: { result: "loss", opponentLogo: "assets/logo-cre.jpg" }, 
             round2: { result: "n", opponentLogo: "" }, 
             round3: { result: "n", opponentLogo: "" }, 
