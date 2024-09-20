@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Antares Underdogs', logo: 'assets/logo-antares.jpg', players: ['Antares', '<br>Pacheco', '<br>Feioso', '<br>Sant', '<br>Braia', '<br>CGaura', '<br>Xuulinha'] },
         { name: 'Baby HD', logo: 'assets/logo-hd.jpg', players: ['m e t a l l i c a ', '<br>clovis', '<br>RENAN POSSUIDÃO', '<br>Bonsai da Montanha', '<br>blackbox', '<br>ARKYN 雨~', '<br>WwN-', '<br>COACH: Joninhas'] },
         { name: 'Caveiras Enfeitiçadas', logo: 'assets/logo-cre.jpg', players: ['CaveiraRosa', '<br>Vidal', '<br>Metabee', '<br>Kenux', '<br>Calunga', '<br>Rato'] },
-        { name: 'FoxHound Junior', logo: 'assets/logo-fhj.jpg', players: ['Bagdendi', '<br>FAKE NATTY', '<br>Nego_Fenix', '<br>AlTeRad0x1', '<br>Vampagaio', '<br>PlayerDu'] },
+        { name: 'FoxHound Junior', logo: 'assets/logo-fox.jpg', players: ['Bagdendi', '<br>FAKE NATTY', '<br>Nego_Fenix', '<br>AlTeRad0x1', '<br>Vampagaio', '<br>PlayerDu'] },
         { name: 'IrmãsDePau.Gaming', logo: 'assets/logo-irmas.jpg', players: ['PAREDÃO_KRN', '<br>JHOON', '<br>DINNAH', '<br>GONKAY', '<br>CHASEIRA', '<br>KEEPDRUNKA', '<br>DANGER', '<br>DINO.KILLER', '<br>COACH: RUFO'] },
         { name: 'NNC', logo: 'assets/logo-nnc.jpg', players: ['Jaguá', '<br>Tears', '<br>Seu Cledson', '<br>Mosca', '<br>#blackbison', '<br>kALEO', '<br>Lambaio Véio', '<br>COACH: Hermione'] },
         { name: 'É os Punhas', logo: 'assets/logo-punhas.jpg', players: [''] },
