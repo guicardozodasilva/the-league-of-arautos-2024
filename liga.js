@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             rank: 3, team: "Antares Underdogs", matches: "1-1", logo: "assets/logo-antares.jpg",
             round1: { result: "loss", opponentLogo: "assets/logo-nnc.jpg" }, 
-            round2: { result: "WIN", opponentLogo: "assets/logo-fox.jpg" }, 
+            round2: { result: "win", opponentLogo: "assets/logo-fox.jpg" }, 
             round3: { result: "n", opponentLogo: "assets/logo-hd.jpg" }
         },
         { 
@@ -91,5 +91,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // Populando as tabelas dos grupos A e B
     populateTable(groupA, 'groupA');
     populateTable(groupB, 'groupB');
+
+    /*
+    function substituirSpanPorImagemENome(matchSelector, imageSrc, imageAlt, teamName) {
+        var matchElement = document.querySelector(matchSelector); // Seleciona o match
+        var firstSpan = matchElement.querySelector('span'); // Seleciona o primeiro span
+    
+        // Cria o elemento img
+        var imgElement = document.createElement('img');
+        imgElement.src = imageSrc;      // Define o caminho da imagem
+        imgElement.alt = imageAlt;      // Define o texto alternativo
+        imgElement.className = 'team-logo'; // Define a classe
+
+        // Define o tamanho da imagem
+        imgElement.style.width = '50px'; // Defina a largura desejada
+        imgElement.style.height = 'auto'; // Mantém a proporção da altura
+    
+        // Cria o elemento span para o nome do time
+        var teamNameElement = document.createElement('span');
+        teamNameElement.textContent = teamName;  // Define o texto do nome do time
+        teamNameElement.className = 'team-name'; // Define a classe para o estilo
+    
+        // Cria um contêiner para imagem e nome
+        var container = document.createElement('div');
+        container.className = 'team-container'; // Define uma classe para o contêiner
+        container.appendChild(imgElement);      // Adiciona a imagem
+        container.appendChild(teamNameElement); // Adiciona o nome do time
+    
+        // Substitui o span pelo contêiner (imagem + nome)
+        matchElement.replaceChild(container, firstSpan);
+    }
+    
+    // Substituir span por imagem e nome do time nas partidas
+    substituirSpanPorImagemENome('.bracket#upper-bracket .round:nth-child(2) .match', 'assets/logo-nnc.jpg', 'Logo NNC', 'NEM NOÉ CARREGA');
+    substituirSpanPorImagemENome('.bracket#upper-bracket .round:nth-child(6) .match', 'assets/logo-cre.jpg', 'Logo CRE', 'Caveiras Enfeitiçadas');
+    
+    */
   
 });
