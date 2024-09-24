@@ -596,87 +596,6 @@ footer .social .icon-discord::before {
     }
 }
 
-
-/*  ACOMPANHAR LIGA */
-/* Container para alinhar o botão e a tabela */
-.container-liga-tabela {
-    display: flex;
-    flex-direction: column; /* Alinha os itens em coluna */
-    align-items: flex-start; /* Alinha o conteúdo à esquerda */
-    margin-top: 60px;
-}
-
-.container-liga-tabela h2 {
-    width: 100%; /* Garante que o h2 ocupe 100% da largura */
-    text-align: center; /* Centraliza o texto do h2 */
-}
-
-.team-name {
-    text-align: center;
-    margin-top: 5px;
-    font-size: 12px; /* Diminuindo o tamanho da fonte */
-}
-
-#liga-tabela {
-    max-width: 800px;
-    width: 90%; /* Ajusta a tabela para ocupar 100% da largura disponível */
-    padding: 20px;
-    margin: 50px auto;
-}
-
-.tabela-liga {
-    max-width: 800px;
-    margin: 50px auto;
-    border-collapse: collapse;
-    width: 100%; /* Ajusta a tabela para ocupar 100% da largura disponível */
-    table-layout: fixed; /* Garante que as colunas mantenham a largura definida */
-}
-
-.tabela-liga th, .tabela-liga td {
-    border: 1px solid #e63946;
-    padding: 10px;
-    text-align: center;
-    overflow: hidden; /* Evita overflow de conteúdo */
-}
-
-.tabela-liga th {
-    background-color: #e63946;
-    color: white;
-}
-
-.tabela-liga td img {
-    width: 60px; /* Ajuste conforme necessário */
-    height: 60px;
-}
-
-.tabela-liga tr:nth-child(even) {
-    background-color: #333; /* Cinza escuro */
-}
-
-/* Estilo para o botão Voltar */
-.back-button {
-    margin-bottom: 10px; /* Margem inferior para separar o botão da tabela */
-    background-color: #e63946;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-    background-color: #d62839; /* Cor vermelha mais escura ao passar o mouse */
-}
-
-@media (max-width: 768px) {
-    .container-liga-tabela {
-        margin-top: 0px;
-    }
-}
-
 /* ACOMPANHAR LIGA */
 /* Container para alinhar o botão e a tabela */
 .container-liga-tabela {
@@ -809,4 +728,52 @@ footer .social .icon-discord::before {
         text-align: center;
         white-space: nowrap; /* Garante que o texto e imagens não quebrem */
     }
+}
+
+.titulo-chaveamento {
+    margin-top: 30px;
+    border-top: 1px solid #d62839;
+    padding-top: 10px;
+}
+
+.titulo-chaveamento, .titulo-bracket, .titulo-round {
+    text-align: center;
+}
+
+.bracket {
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.round {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d62839;
+    padding-bottom: 10px;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.match span {
+    flex: 1;
+    text-align: center;
+}
+
+.match span:nth-child(2),
+.match span:nth-child(3) {
+    flex: 0.2;
+    background-color: #d62839;
+    margin: 0 5px;
+    border-radius: 3px;
 }
