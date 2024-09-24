@@ -740,6 +740,10 @@ footer .social .icon-discord::before {
     text-align: center;
 }
 
+.titulo-round {
+    color: #d62839;
+}
+
 .bracket {
     max-width: 800px;
     width: 90%;
@@ -753,6 +757,7 @@ footer .social .icon-discord::before {
     margin-bottom: 30px;
     border-bottom: 1px solid #d62839;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .match {
