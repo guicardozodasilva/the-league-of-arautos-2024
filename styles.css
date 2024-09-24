@@ -748,7 +748,7 @@ footer .social .icon-discord::before {
     max-width: 800px;
     width: 90%;
     margin: 50px auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 8px;
 }
