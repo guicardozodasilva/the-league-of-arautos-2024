@@ -740,8 +740,13 @@ footer .social .icon-discord::before {
     text-align: center;
 }
 
+#grand-final {
+    text-align: center;
+}
+
 .titulo-round {
     color: #d62839;
+    margin-bottom: 0%;
 }
 
 .bracket {
@@ -755,7 +760,6 @@ footer .social .icon-discord::before {
 
 .round {
     margin-bottom: 30px;
-    border-bottom: 1px solid #d62839;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -781,4 +785,10 @@ footer .social .icon-discord::before {
     background-color: #d62839;
     margin: 0 5px;
     border-radius: 3px;
+}
+
+.team-name{
+    position: relative;
+    padding: 20px;
+    bottom: 10px;
 }
