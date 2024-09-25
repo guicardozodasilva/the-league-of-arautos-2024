@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dados para o Grupo B
     const groupB = [
         { 
-            rank: 1, team: "NEM NOÉ CARREGA", matches: "2-0", logo: "assets/logo-nnc.jpg",
+            rank: 1, team: "NEM NOÉ CARREGA", matches: "3-0", logo: "assets/logo-nnc.jpg",
             round1: { result: "win", opponentLogo: "assets/logo-antares.jpg" }, 
             round2: { result: "win", opponentLogo: "assets/logo-hd.jpg" }, 
             round3: { result: "win", opponentLogo: "assets/logo-fox.jpg"}
