@@ -36,16 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
             round3: { result: "win", opponentLogo: "assets/logo-fox.jpg"}
         },
         { 
-            rank: 2, team: "Baby HD", matches: "1-1", logo: "assets/logo-hd.jpg",
+            rank: 2, team: "Baby HD", matches: "2-1", logo: "assets/logo-hd.jpg",
             round1: { result: "win", opponentLogo: "assets/logo-fox.jpg" }, 
             round2: { result: "loss", opponentLogo: "assets/logo-nnc.jpg" }, 
-            round3: { result: "n", opponentLogo: "assets/logo-antares.jpg" }
+            round3: { result: "win", opponentLogo: "assets/logo-antares.jpg" }
         },
         { 
-            rank: 3, team: "Antares Underdogs", matches: "1-1", logo: "assets/logo-antares.jpg",
+            rank: 3, team: "Antares Underdogs", matches: "1-2", logo: "assets/logo-antares.jpg",
             round1: { result: "loss", opponentLogo: "assets/logo-nnc.jpg" }, 
             round2: { result: "win", opponentLogo: "assets/logo-fox.jpg" }, 
-            round3: { result: "n", opponentLogo: "assets/logo-hd.jpg" }
+            round3: { result: "loss", opponentLogo: "assets/logo-hd.jpg" }
         },
         { 
             rank: 4, team: "FOXHOUND JUNIOR", matches: "0-3", logo: "assets/logo-fox.jpg",
